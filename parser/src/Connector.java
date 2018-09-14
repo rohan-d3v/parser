@@ -21,11 +21,11 @@ public final class Connector extends AbstractListSymbol implements ListSymbol {
      */
     private Connector(Type type){
         this.type = type;
-        map.put("^", Type.AND);
-        map.put("v", Type.OR);
-        map.put("~", Type.NOT);
-        map.put("(", Type.OPEN);
-        map.put(")", Type.CLOSE);
+        map.put("U+2227", Type.AND);
+        map.put("U+2228", Type.OR);
+        map.put("U+00AC", Type.NOT);
+        map.put("U+0028", Type.OPEN);
+        map.put("U+0029", Type.CLOSE);
     }
 
     public static final Connector Build(Type type){
